@@ -48,8 +48,8 @@ class IMSMI():
         self.results = []
         self.best_result = 0
         self.step = 0
-        self.lamada_u_v = 0.001
-        self.lamada_a = 1
+        self.lamada_u_v = 0.1
+        self.lamada_a = 0.1
 
         self.initializer = tf.random_normal_initializer(mean=0, stddev=0.01)
         self.initializer_param = tf.random_uniform_initializer(minval=-np.sqrt(3 / self.global_dimension),
